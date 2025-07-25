@@ -9,6 +9,12 @@ namespace Demo
             #region Class Library
             Product product = new Product();
             #endregion
+
+            #region User Defined Data Type
+
+
+
+            #endregion
         }
     }
 }
