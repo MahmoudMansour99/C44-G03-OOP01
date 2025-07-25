@@ -55,7 +55,70 @@ namespace Demo
 
             #endregion
 
+            #region Example 02
 
+            //Student student = new Student()
+            //{
+            //    Id = 1,
+            //    Name = "Eman",
+            //    Branch = Branch.Dokki,
+            //    Gender = Gender.F,
+            //    Grade = Grade.B,
+            //};
+
+            Student student = new Student();
+            bool IsParse;
+            Console.WriteLine("Please Enter Student Data: - ");
+            int Id;
+            
+            do
+            {
+                Console.Write("Id: ");
+                IsParse = int.TryParse(Console.ReadLine(), out Id);
+            }
+            while (!IsParse);
+
+            student.Id = Id; // Student Id
+
+            Console.Write("Name: ");
+            student.Name = Console.ReadLine(); // Student Name
+
+            object Gender;
+
+            do
+            {
+                Console.Write("Gender: ");
+                IsParse = Enum.TryParse(typeof(Gender) ,Console.ReadLine(), out Gender);
+            }
+            while (!IsParse || Gender == null);
+
+            student.Gender = (Gender)Gender;
+
+            Branch Branch;
+
+            do
+            {
+                Console.Write("Branch: ");
+                IsParse = Enum.TryParse<Branch>(Console.ReadLine(), out Branch);
+            }
+            while (!IsParse);
+
+            student.Branch = Branch;
+
+            Grade Grade;
+
+            do
+            {
+                Console.Write("Grade: ");
+                IsParse = Enum.TryParse(Console.ReadLine(), out Grade);
+            }
+            while (!IsParse);
+            student.Grade = Grade;
+
+            Console.Clear();
+            Console.WriteLine($"Hello {student.Name} Welcome to Route Academy\n Branch is {student.Branch} and your Grade is {student.Grade}");
+
+            #endregion
 
             #endregion
         }
