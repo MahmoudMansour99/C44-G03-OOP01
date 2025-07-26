@@ -53,10 +53,36 @@
             //else
             //    Console.WriteLine("Invalid season entered.");
 
-            
+
 
             #endregion
-              
+            #region 3-Assign the following Permissions (Read, write, Delete, Execute) in a form of Enum. Create Variable from previous Enum to Add and Remove Permission from variable, check if specific Permission existed inside variable
+
+            //Permissions perm = Permissions.None;
+
+            //perm |= Permissions.Read;
+            //perm |= Permissions.Write;
+            //perm |= Permissions.Execute;
+            //perm |= Permissions.Delete;
+
+            //Console.WriteLine($"Permessions Now are : {perm}");
+
+            //if ((perm & Permissions.Write) == Permissions.Write)
+            //    Console.WriteLine("Permession Write is set");
+
+            //perm &= ~Permissions.Write;
+            //Console.WriteLine("After removing Write: " + perm);
+
+            //if ((perm & Permissions.Write) == Permissions.Write)
+            //{
+            //    Console.WriteLine("Write permission still exists.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Write permission has been removed.");
+            //}
+
+            #endregion
         }
     }
 }
