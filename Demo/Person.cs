@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common
+namespace Demo
 {
-    public class Product
+    internal class Person
     {
-        public int Id { get; set; }
+         public int Id { get; set; }
         public string Name { get; set; }
-        public string Description { get; set; }
-        public decimal Price { get; set; }
+        //public string Gender { get; set; }
+        public Gender Gender { get; set; }
     }
 }
