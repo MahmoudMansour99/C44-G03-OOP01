@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Assignment
 {
-    [Flags]
-    public enum WeekDays:int
+    internal enum WeekDays
     {
-        Monday = 1, Tuesday = 2, Wednesday = 3, Thursday = 4, Friday = 5, Saturday = 6,  Sunday= 6, 
+        Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
     }
 }

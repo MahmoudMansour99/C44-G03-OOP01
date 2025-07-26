@@ -6,10 +6,16 @@
         {
             #region 1-Create an Enum called "WeekDays" with the days of the week (Monday to Sunday) as its members. Then, write a C# program that prints out all the days of the week using this Enum.
 
-            foreach (WeekDays day in Enum.GetValues(typeof(WeekDays)))
-            {
-                Console.WriteLine(day);
-            }
+            //foreach (WeekDays day in Enum.GetValues(typeof(WeekDays)))
+            //{
+            //    Console.WriteLine(day);
+            //}
+
+            //for (int i = 0; i <= (int)WeekDays.Sunday; i++)
+            //{
+            //    WeekDays day = (WeekDays)i;
+            //    Console.WriteLine(day);
+            //}
 
             #endregion
         }
